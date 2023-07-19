@@ -44,7 +44,7 @@ const Card = () => {
                 modules={[Pagination]}
                 className={style.swiper}
             >
-                    <SwiperSlide className={style.slide}>
+                <SwiperSlide className={style.slide}>
                     <div>Em breve...</div>
                 </SwiperSlide>
                 <SwiperSlide className={style.slide}>

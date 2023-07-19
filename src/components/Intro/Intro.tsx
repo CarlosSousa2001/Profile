@@ -7,7 +7,6 @@ import { IoLogoNodejs } from 'react-icons/io'
 import { SiMysql } from 'react-icons/si'
 import { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
-import useScrollReveal from '@/hooks/useScrollReveal';
 import Typewriter from 'typewriter-effect';
 
 type Props = {
@@ -22,7 +21,7 @@ type Props = {
 }
 const Intro = (props: Props) => {
 
-    useScrollReveal('.your-element');
+
 
     const [element, setElement] = useState<any>([]);
 
@@ -83,7 +82,7 @@ const Intro = (props: Props) => {
     }
 
     return (
-        <div className={`${style.container} your-element`}>
+        <div className={`${style.container}`}>
             <div className={style.area}>
                 <div className={style.info}>
                     <h3 className={style.title} style={getStylesTitle()}>{props.title}</h3>

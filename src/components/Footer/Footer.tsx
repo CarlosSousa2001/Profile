@@ -5,11 +5,10 @@ import { AiFillLinkedin } from 'react-icons/ai'
 import { AiFillInstagram } from 'react-icons/ai'
 import { AiOutlineWhatsApp } from 'react-icons/ai'
 import Form from '../Form/Form'
-import useScrollReveal from '@/hooks/useScrollReveal'
+
 const Footer = () => {
-    useScrollReveal('.your-element')
     return (
-        <div id='contact' className={`${style.container} your-element`}>
+        <div id='contact' className={`${style.container}`}>
             <div className={style.area}>
                 <div className={style.contact}>
                     <div className={style.iconArea}>
