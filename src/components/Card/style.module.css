@@ -1,0 +1,35 @@
+.card {
+    width: 100%;
+
+}
+
+.swiper {
+    height: 300px;
+
+}
+
+.slide {
+    margin: 0px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide .span {
+    margin-top: 22px;
+    color: white;
+}
+
+
+
+@media (max-width: 700px) {
+    .card {
+        width:340px;
+        margin: auto;
+    }
+
+    .swiper {
+        height: 300px;
+    }
+}

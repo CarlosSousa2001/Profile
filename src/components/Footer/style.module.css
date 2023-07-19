@@ -1,0 +1,43 @@
+.container {
+    width: 100%;
+    background-color: #2d2d2d;
+    padding: 20px;
+    border-radius: 4px;
+    margin-top: 40px;
+}
+
+.area {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 42px;
+}
+
+.area .contact {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.area .contact .iconArea {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.area .contact .iconArea a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.area .contact .icon {
+    font-size: 30px;
+}
+@media (max-width: 600px) {
+    .area {
+        flex-direction: column;
+        gap: 20px;
+        
+    }
+}
