@@ -1,3 +1,5 @@
+
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -6,18 +8,20 @@
     height: 60px;
     padding:  0px 20px;
     border-radius: 4px;
-    margin-top: 10px;
+    margin-top: 20px;
+
 }
 .logo {
    
 }
 
 .title {
-    background-image: radial-gradient(circle at -0.33% 54.4%, #ff8c86 0, #ff7b87 16.67%, #ff6182 33.33%, #f23c78 50%, #da0070 66.67%, #c6006f 83.33%, #b50074 100%);
+    /* background-image: radial-gradient(circle at -0.33% 54.4%, #ff8c86 0, #ff7b87 16.67%, #ff6182 33.33%, #f23c78 50%, #da0070 66.67%, #c6006f 83.33%, #b50074 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    text-fill-color: transparent;
+    text-fill-color: transparent; */
+    color: #55DF77;
     font-size: 2rem;
 }
 

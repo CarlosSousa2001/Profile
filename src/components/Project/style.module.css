@@ -13,10 +13,10 @@
 }
 
 .area .title {
-    background-image: radial-gradient(circle at -0.33% 54.4%, #ff8c86 0, #ff7b87 16.67%, #ff6182 33.33%, #f23c78 50%, #da0070 66.67%, #c6006f 83.33%, #b50074 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
     font-size: 38px;
+
+    background-clip: text;
+
+    color: #55DF77;
+
 }

@@ -5,6 +5,8 @@ import { SiNextdotjs } from 'react-icons/si'
 import { BiLogoReact } from 'react-icons/bi'
 import { IoLogoNodejs } from 'react-icons/io'
 import { SiMysql } from 'react-icons/si'
+import { FaJava } from 'react-icons/fa'
+import { SiSpringboot } from 'react-icons/si'
 import { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import Typewriter from 'typewriter-effect';
@@ -58,11 +60,12 @@ const Intro = (props: Props) => {
     const getStylesTitle = () => {
         if (props.colorTitle) {
             return {
-                backgroundImage: 'radial-gradient(circle at -0.33% 54.4%, #ff8c86 0, #ff7b87 16.67%, #ff6182 33.33%, #f23c78 50%, #da0070 66.67%, #c6006f 83.33%, #b50074 100%)',
-                WebkitBackgroundClip: 'text',
-                WebkitTextFillColor: 'transparent',
-                backgroundClip: 'text',
-                textFillColor: 'transparent',
+                // backgroundImage: 'radial-gradient(circle at -0.33% 54.4%, #ff8c86 0, #ff7b87 16.67%, #ff6182 33.33%, #f23c78 50%, #da0070 66.67%, #c6006f 83.33%, #b50074 100%)',
+                // WebkitBackgroundClip: 'text',
+                // WebkitTextFillColor: 'transparent',
+                // backgroundClip: 'text',
+                // textFillColor: 'transparent',
+                color: '#55DF77',
             };
         } else {
             return {
@@ -87,25 +90,25 @@ const Intro = (props: Props) => {
                 <div className={style.info}>
                     <h3 className={style.title} style={getStylesTitle()}>{props.title}</h3>
                     <h2 style={getStyleSubtitle()} className={style.subtitle}>
-                    <Typewriter
-                        onInit={(typewriter) => {
-                            typewriter
-                                .typeString(props.subtitle)
-                                .start();
-                        }
-                        }
-                        options={{
-                            autoStart: true,
-                            delay: 50,
-                            deleteSpeed: 90,
-                            cursor: '',
-                            
-                        }}
-                        
-                    />
+                        <Typewriter
+                            onInit={(typewriter) => {
+                                typewriter
+                                    .typeString(props.subtitle)
+                                    .start();
+                            }
+                            }
+                            options={{
+                                autoStart: true,
+                                delay: 50,
+                                deleteSpeed: 90,
+                                cursor: '',
+
+                            }}
+
+                        />
                     </h2>
-                    
-                    {props.buttonContact ? <button className={style.buttonContact}>Contate-me</button> : <span className={style.resume}>{props.resume}</span>}
+
+                    {props.buttonContact ? <a  href="#contact" className={style.buttonContact} >Contate-me</a> : <span className={style.resume}>{props.resume}</span>}
                 </div>
                 <div className={style.img}>
                     {props.buttonContact ?
@@ -116,16 +119,16 @@ const Intro = (props: Props) => {
                         <div className={style.areaBlocs}>
                             <div className={style.block}>
                                 <div className={style.itemBlock}>
-                                    <SiNextdotjs />
-                                    <span className={style.itemText}>Next.js</span>
-                                </div>
-                                <div className={style.itemBlock}>
                                     <BiLogoReact />
                                     <span className={style.itemText}>React.js</span>
                                 </div>
                                 <div className={style.itemBlock}>
-                                    <IoLogoNodejs />
-                                    <span className={style.itemText}>Node.js</span>
+                                    <FaJava />
+                                    <span className={style.itemText}>Java</span>
+                                </div>
+                                <div className={style.itemBlock}>
+                                    <SiSpringboot />
+                                    <span className={style.itemText}>Spring Boot</span>
                                 </div>
                                 <div className={style.itemBlock}>
                                     <SiMysql />

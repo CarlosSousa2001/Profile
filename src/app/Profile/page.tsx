@@ -7,7 +7,7 @@ const Profile = () => {
         <div>
             <Intro
                 title={"Olá, eu sou o Carlos Sousa"}
-                subtitle={"Desenvolvedor Front End"}
+                subtitle={"Desenvolvedor Back End"}
                 buttonContact={true}
                 img={banner}
                 colorTitle={false}
@@ -16,12 +16,12 @@ const Profile = () => {
                 />
             <Intro
                 title={"Sobre mim"}
-                subtitle={" Eu sou desenvolvedor Front End"}
+                subtitle={" Eu sou desenvolvedor Back End"}
                 buttonContact={false}
                 img={""} 
                 colorTitle={true}
                 colorSubtitle={true}
-                resume={"Sou um desenvolvedor front end estudando programação e trabalhando em projetos usando React.js, Next.js, TypeScript, Node.js e MySQL. Acredito que a programação é uma habilidade crucial e estou empenhado em continuar aprimorando minhas habilidades como desenvolvedor."}
+                resume={"Sou um desenvolvedor back end estudando programação e trabalhando em projetos usando Java, Spring Boot 3, Mysql, AWS, Docker, React.js, Next.js, TypeScript. Acredito que a programação é uma habilidade crucial e estou empenhado em continuar aprimorando minhas habilidades como desenvolvedor."}
                 />
 
                 <Project/>

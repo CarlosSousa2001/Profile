@@ -60,7 +60,12 @@ const Card = () => {
                 <SwiperSlide className={style.slide}>
                     <div>Em breve...</div>
                 </SwiperSlide>
-
+                <SwiperSlide className={style.slide}>
+                    <div>Em breve...</div>
+                </SwiperSlide>
+                <SwiperSlide className={style.slide}>
+                    <div>Em breve...</div>
+                </SwiperSlide>
 
             </Swiper>
         </div>

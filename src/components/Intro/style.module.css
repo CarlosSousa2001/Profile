@@ -26,20 +26,23 @@
 
 .info .subtitle {
     font-size: 52px;
-    background-image: radial-gradient(circle at -0.33% 54.4%, #ff8c86 0, #ff7b87 16.67%, #ff6182 33.33%, #f23c78 50%, #da0070 66.67%, #c6006f 83.33%, #b50074 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+
     background-clip: text;
-    text-fill-color: transparent;
+
+    color: #55DF77;
 }
 
 .info .buttonContact {
     width: 150px;
     padding: 10px;
-    background-image: radial-gradient(circle at -0.33% 54.4%, #ff8c86 0, #ff7b87 16.67%, #ff6182 33.33%, #f23c78 50%, #da0070 66.67%, #c6006f 83.33%, #b50074 100%);
+    background-color: #55DF77;
     color: white;
     border: none;
     border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
 }
 
 .img {
