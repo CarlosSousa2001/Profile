@@ -1,8 +1,16 @@
+import Footer from "@/components/Footer/Footer"
+import Profile from "./Profile/page"
+import Header from "@/components/Header/Header"
 
-export default function Home() {
-  return (
-    <main>
-     
-    </main>
-  )
+const Page = () => {
+    return (
+        <>
+        <Header/>
+        <Profile/>
+        <Footer/>
+        </>
+
+    )
 }
+
+export default Page

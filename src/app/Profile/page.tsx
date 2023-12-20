@@ -1,5 +1,4 @@
 import Intro from '@/components/Intro/Intro'
-import style from './style.module.css'
 import banner from '../../img/hero.jpg'
 import Project from '@/components/Project/Project'
 const Profile = () => {
