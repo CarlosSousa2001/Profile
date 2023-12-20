@@ -4,8 +4,9 @@
 }
 
 .swiper {
-    height: 300px;
-
+    max-width: 500px;
+    height: 410px;
+    padding: 8px;
 }
 
 .slide {
@@ -21,11 +22,20 @@
     color: white;
 }
 
+.span a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #55DF77;
+    cursor: pointer;
+    background-color: #202124;
+    padding: 4px;
+    border-radius: 6px;
+}
 
 
 @media (max-width: 700px) {
     .card {
-        width:340px;
+        max-width:340px;
         margin: auto;
     }
 

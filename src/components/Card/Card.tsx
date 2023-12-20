@@ -4,14 +4,16 @@ import React, { useRef, useState, useEffect } from 'react';
 import style from './style.module.css';
 // Import Swiper styles
 import 'swiper/css';
+import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import 'swiper/css/effect-coverflow';
 
 //imagens
-import sis from '../../img/sistema.png';
-
+import sis from '../../img/sistemaredimensionado.png';
+import anagrama from '../../img/anagramaredi.png'
 
 // import required modules
-import { Pagination } from 'swiper/modules';
+import { EffectCoverflow, Navigation, Pagination } from 'swiper/modules';
 import Image from 'next/image';
 
 const Card = () => {
@@ -36,16 +38,33 @@ const Card = () => {
     return (
         <div className={style.card}>
             <Swiper
-                slidesPerView={sliderView}
-                spaceBetween={10}
-                pagination={{
-                    clickable: true,
+                effect={'coverflow'}
+                grabCursor={true}
+                centeredSlides={true}
+                slidesPerView={'auto'}
+                coverflowEffect={{
+                    rotate: 50,
+                    stretch: 0,
+                    depth: 100,
+                    modifier: 1,
+                    slideShadows: true,
                 }}
-                modules={[Pagination]}
+                navigation={true}
+                pagination={true}
+                modules={[EffectCoverflow, Navigation, Pagination]}
                 className={style.swiper}
             >
                 <SwiperSlide className={style.slide}>
-                    <div>Em breve...</div>
+                    <Image
+                        src={anagrama}
+                        alt="Descrição da imagem"
+                        layout="responsive"
+                        objectFit="cover"
+                        objectPosition="center center"
+                    />
+                    <p className={style.span}>
+                        <a href="https://github.com/CarlosSousa2001/controllerClientSpring">Api rest - controle de clientes</a>
+                    </p>
                 </SwiperSlide>
                 <SwiperSlide className={style.slide}>
                     <Image
@@ -55,10 +74,9 @@ const Card = () => {
                         objectFit="cover"
                         objectPosition="center center"
                     />
-                    <p className={style.span}>Sistema Financeiro</p>
-                </SwiperSlide>
-                <SwiperSlide className={style.slide}>
-                    <div>Em breve...</div>
+                    <p className={style.span}>
+                        <a href="https://github.com/CarlosSousa2001/dashboard">Sistema Financeiro</a>
+                    </p>
                 </SwiperSlide>
                 <SwiperSlide className={style.slide}>
                     <div>Em breve...</div>

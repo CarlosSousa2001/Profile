@@ -16,7 +16,7 @@ const Profile = () => {
                 />
             <Intro
                 title={"Sobre mim"}
-                subtitle={" Eu sou desenvolvedor Back End"}
+                subtitle={" Eu sou desenvolvedor Java"}
                 buttonContact={false}
                 img={""} 
                 colorTitle={true}

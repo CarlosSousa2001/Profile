@@ -36,7 +36,6 @@ const Header = () => {
                             <li><a href="#home">Home</a></li>
                             <li><a href="#sobre">Sobre</a></li>
                             <li><a href="#contact">Contatos</a></li>
-                            <li><a href="#blog">Blog</a></li>
                             <li><a href="#projects">Projetos</a></li>
                         </ul>
                     </nav>
@@ -57,7 +56,6 @@ const Header = () => {
                             <li className={styles.itemmenu}><a href="#home">Home</a></li>
                             <li className={styles.itemmenu}><a href="#sobre">Sobre</a></li>
                             <li className={styles.itemmenu}><a href="#contact">Contatos</a></li>
-                            <li className={styles.itemmenu}><a href="#blog">Blog</a></li>
                             <li className={styles.itemmenu}><a href="#projects">Projetos</a></li>
                         </ul>
                     </nav>
